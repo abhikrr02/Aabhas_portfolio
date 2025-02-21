@@ -43,7 +43,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    margin: 0 10px;
   }
 
   .navbar .container .logo{
@@ -311,10 +311,11 @@ body {
     margin: auto;
 }
 .doings .card1{
-    width: 45%;
+    width: 410px;
     padding: 10px;
     margin: 15px;
     display: flex;
+    align-items: center;
     border-radius: 25px;
     box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.4)
 }
@@ -325,20 +326,19 @@ body {
     align-items: center;
     justify-content: center;
     width: 60px;
+    height: 60px;
     border-radius: 20px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
 }
 
 .doings .card1 .title{
     margin: 0 20px;
+    width: 290px;
 }
 
 .doings .card1 .title h6{
     font-size: 25px;
-    text-align: center;
-}
-.doings .card1 .title p{
-    text-align: center;
+
 }
 
 
@@ -360,6 +360,10 @@ body {
     border-radius: 15px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+}
+.s-icon:hover{
+    transform: scale(1.25);
+    transition: 0.5s;
 }
 
 
@@ -399,6 +403,9 @@ body {
     .doings .card1 .c-icon{
         width: 60px;
         height: 60px;
+    }
+    .doings .card1 .title{
+        width: 200px;
     }
 }
 
@@ -466,6 +473,34 @@ body {
     .doings .card1 .c-icon{
         width: 60px;
     }
+
+    .h-icon{
+        width: 60px;
+    }
+    .right-container .head-container .main-heading{
+        font-size: 18px;
+        width: 234px;
+    }
+    .experience .e-icon{
+        width: 40px;
+        font-size: 35px;
+        padding: 5px;
+    }
+    .experience .e-content{
+        width: 190px;
+    }
+    .education-heading{
+        font-size: 18px !important;
+    }
+    .e-content{
+        width: 224px;
+    }
+    .tech-wrapper{
+        width: 100% !important;
+        gap: 0 !important;
+    }
+
+
 }
 
 
@@ -512,6 +547,11 @@ body {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
     margin: 10px 32px;
 }
+
+.e-content{
+    width: 80%;
+}
+
 .e-content h5{
     display: flex;
     justify-content: space-between;
@@ -568,6 +608,7 @@ body {
     height: 40px;
     margin: 10px;
     padding: 5px;
+    font-size: 30px;
     border-radius: 12px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -620,3 +661,7 @@ body {
     gap: 0.5rem;
     padding-top: 1rem;
 }
+
+
+
+
