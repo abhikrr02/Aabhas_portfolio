@@ -56,6 +56,7 @@ body {
     border-radius: 50%;
     display: flex;
     align-items: center;
+    background: #aaccdd;
   }
 
   .navbar .container .logo a img:hover{
@@ -178,7 +179,7 @@ body {
 
   /* main section */
  .main-section{
-    padding-top: 2rem;
+    padding-top: 1.5rem;
 }
 
 .main-container{
@@ -289,10 +290,12 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 15px;
+    font-size: 30px;
 }
 .main-container .right-container .heading p{
     text-align: center;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    font-size: 14px;
 }
 
 .doings{
@@ -300,6 +303,7 @@ body {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .doings h1{
@@ -307,11 +311,12 @@ body {
     text-align: center;
     width: 90%;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     margin: auto;
+    font-size: 25px;
 }
 .doings .card1{
-    width: 410px;
+    width: 46%;
     padding: 10px;
     margin: 15px;
     display: flex;
@@ -333,12 +338,16 @@ body {
 
 .doings .card1 .title{
     margin: 0 20px;
-    width: 290px;
+    width: 60%;
 }
 
 .doings .card1 .title h6{
-    font-size: 25px;
+    font-size: 20px;
 
+}
+
+.doings .card1 .title p{
+    font-size: 12px;
 }
 
 
@@ -349,7 +358,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .s-icon{
@@ -382,7 +391,7 @@ body {
     }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 913px) {
     .main-container .left-container {
         width: 90%; /* Adjust width on smaller devices */
     }
@@ -405,7 +414,7 @@ body {
         height: 60px;
     }
     .doings .card1 .title{
-        width: 200px;
+        width: 60%;
     }
 }
 
@@ -479,7 +488,7 @@ body {
     }
     .right-container .head-container .main-heading{
         font-size: 18px;
-        width: 234px;
+        width: 190px;
     }
     .experience .e-icon{
         width: 40px;
@@ -487,7 +496,7 @@ body {
         padding: 5px;
     }
     .experience .e-content{
-        width: 190px;
+        width: 220px;
     }
     .education-heading{
         font-size: 18px !important;
@@ -496,7 +505,7 @@ body {
         width: 224px;
     }
     .tech-wrapper{
-        width: 100% !important;
+        width: 95% !important;
         gap: 0 !important;
     }
 
@@ -568,7 +577,7 @@ body {
 
 .e-content a:hover{
     
-    transform: scale(1.25);
+    transform: scale(1.5);
     transition: 0.5s;
 
 }
