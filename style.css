@@ -71,8 +71,8 @@ body {
   .navbar .main-menu ul {
     display: flex;
   }
-  
-  .navbar ul li a {
+
+  .nav-btn{
     padding: 0.6rem 0.9rem;
     display: block;
     font-weight: 600;
@@ -81,7 +81,15 @@ body {
     margin: 5px 2px;
   }
   
-  .navbar ul li a:hover {
+  
+ /* Hover effect */
+.navbar ul li a:hover {
+    color: #fff;
+    background: #6ea0bb;
+    border-radius: 25px;
+  }
+  
+  .navbar ul li a.active {
     color: #fff;
     background: #6ea0bb;
     border-radius: 25px;
