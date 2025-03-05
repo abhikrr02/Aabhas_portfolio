@@ -28,7 +28,7 @@ window.onload = () => {
   } else if(myPageTag.includes('resume')) {
     navLinks[1].classList.add('active');
     navLinksMobile[1].classList.add('active');
-  } else if (myPageTag.includes('projects')) {
+  } else if (myPageTag.includes('skills')) {
     navLinks[2].classList.add('active');
     navLinksMobile[2].classList.add('active');
   } else if (myPageTag.includes('contact-me')) {
