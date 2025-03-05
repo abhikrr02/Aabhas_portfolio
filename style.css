@@ -764,3 +764,196 @@ body {
     padding-top: 2rem;
 }
 
+
+
+/* General Styling */
+.skills-wrapper {
+    width: 80%;
+    padding: 1.5rem 0;
+    border-radius: 20px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: auto;
+}
+
+.skills-icon {
+    width: 50px;
+    height: 50px;
+    margin: 16px;
+    padding: 5px;
+    font-size: 40px;
+    border-radius: 12px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: width 0.3s ease, font-size 0.3s ease;
+}
+
+.skills-icon::after {
+    content: attr(data-name); /* Get the technology name from the data-name attribute */
+    position: absolute;
+    bottom: -30px; /* Position the name below the icon */
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.skills-icon:hover {
+    width: 100px; /* Increase the width on hover */
+}
+
+.skills-icon:hover::after {
+    opacity: 1; /* Make the name visible */
+    visibility: visible;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 767px) {
+    /* Skills Wrapper */
+    .skills-wrapper, .learning-wrapper {
+        flex-direction: column; /* Stack icons vertically */
+        width: 90%; /* Make the wrapper take up more width on small screens */
+        font-size: 24px; /* Reduce font size */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .skills-icon {
+        width: 40px; /* Reduce icon size */
+        height: 40px;
+        font-size: 30px; /* Reduce font size of icons */
+        margin: 8px; /* Reduce margin between icons */
+    }
+
+    .skills-icon::after {
+        font-size: 12px; /* Adjust name font size */
+        bottom: -25px; /* Adjust position of the name */
+    }
+
+    .skills-icon:hover {
+        width: 80px; /* Reduce the width increase on hover */
+    }
+
+    /* Learning Wrapper */
+    .learning-wrapper {
+        margin-top: 20px; /* Add space between sections */
+    }
+
+    .learning-wrapper .skills-icon {
+        width: 40px; /* Reduce icon size for learning wrapper */
+        height: 40px;
+        font-size: 30px;
+        margin: 8px;
+    }
+
+    .learning-wrapper .skills-icon::after {
+        font-size: 12px; /* Adjust name font size */
+        bottom: -25px; /* Adjust position of the name */
+    }
+
+    .learning-wrapper .skills-icon:hover {
+        width: 80px; /* Adjust hover width */
+    }
+}
+
+/* Medium Devices (e.g., Tablets) */
+@media (max-width: 1024px) {
+    /* Skills Wrapper */
+    .skills-wrapper, .learning-wrapper {
+        width: 75%; /* Reduce wrapper width on tablets */
+        padding: 1rem;
+    }
+
+    .skills-icon {
+        width: 45px; /* Adjust icon size */
+        height: 45px;
+        font-size: 35px; /* Adjust font size of icons */
+        margin: 12px; /* Adjust margin between icons */
+    }
+
+    .skills-icon::after {
+        font-size: 13px; /* Adjust name font size */
+        bottom: -28px; /* Adjust position of the name */
+    }
+
+    .skills-icon:hover {
+        width: 90px; /* Set hover width */
+    }
+
+    /* Learning Wrapper */
+    .learning-wrapper {
+        margin-top: 20px;
+    }
+
+    .learning-wrapper .skills-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 35px;
+        margin: 12px;
+    }
+
+    .learning-wrapper .skills-icon::after {
+        font-size: 13px;
+        bottom: -28px;
+    }
+
+    .learning-wrapper .skills-icon:hover {
+        width: 90px;
+    }
+}
+
+/* Large Devices (e.g., Desktops) */
+@media (min-width: 1025px) {
+    .skills-wrapper, .learning-wrapper {
+        width: 70%; /* Reduce the wrapper width on large screens */
+    }
+
+    .skills-icon {
+        width: 50px; /* Keep the default size for desktop */
+        height: 50px;
+        font-size: 40px; /* Keep the default font size for icons */
+        margin: 16px; /* Keep the default margin */
+    }
+
+    .skills-icon::after {
+        font-size: 14px; /* Keep the default font size for the name */
+        bottom: -30px; /* Keep the default position */
+    }
+
+    .skills-icon:hover {
+        width: 100px; /* Keep the default hover width */
+    }
+
+    /* Learning Wrapper */
+    .learning-wrapper {
+        margin-top: 30px;
+    }
+
+    .learning-wrapper .skills-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        margin: 16px;
+    }
+
+    .learning-wrapper .skills-icon::after {
+        font-size: 14px;
+        bottom: -30px;
+    }
+
+    .learning-wrapper .skills-icon:hover {
+        width: 100px;
+    }
+}
