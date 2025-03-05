@@ -734,9 +734,9 @@ body {
 }
 
 .skills-icon::after {
-    content: attr(data-name); /* Get the technology name from the data-name attribute */
+    content: attr(data-name); 
     position: absolute;
-    bottom: -30px; /* Position the name below the icon */
+    bottom: -30px; 
     padding: 5px;
     text-align: center;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
@@ -750,12 +750,12 @@ body {
 }
 
 .skills-icon:hover {
-    width: 100px; /* Increase the width on hover */
+    width: 100px; 
     
 }
 
 .skills-icon:hover::after {
-    opacity: 1; /* Make the name visible */
+    opacity: 1; 
     visibility: visible;
 }
 
@@ -766,7 +766,6 @@ body {
 
 
 
-/* General Styling */
 .skills-wrapper {
     width: 80%;
     padding: 1.5rem 0;
@@ -795,9 +794,9 @@ body {
 }
 
 .skills-icon::after {
-    content: attr(data-name); /* Get the technology name from the data-name attribute */
+    content: attr(data-name); 
     position: absolute;
-    bottom: -30px; /* Position the name below the icon */
+    bottom: -30px; 
     padding: 5px;
     text-align: center;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
@@ -811,88 +810,95 @@ body {
 }
 
 .skills-icon:hover {
-    width: 100px; /* Increase the width on hover */
+    width: 100px; 
 }
 
 .skills-icon:hover::after {
-    opacity: 1; /* Make the name visible */
+    opacity: 1; 
     visibility: visible;
 }
 
-/* Media Queries for Responsiveness */
+.right-container .contact-info{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 4rem 0;
+    font-family: cursive;
+    
+}
 
 @media (max-width: 767px) {
-    /* Skills Wrapper */
+    
     .skills-wrapper, .learning-wrapper {
-        flex-direction: column; /* Stack icons vertically */
-        width: 90%; /* Make the wrapper take up more width on small screens */
-        font-size: 24px; /* Reduce font size */
-        padding: 1rem; /* Adjust padding */
+        flex-direction: column; 
+        width: 90%; 
+        font-size: 24px; 
+        padding: 1rem; 
     }
 
     .skills-icon {
-        width: 40px; /* Reduce icon size */
+        width: 40px; 
         height: 40px;
-        font-size: 30px; /* Reduce font size of icons */
-        margin: 8px; /* Reduce margin between icons */
+        font-size: 30px; 
+        margin: 8px;
     }
 
     .skills-icon::after {
-        font-size: 12px; /* Adjust name font size */
-        bottom: -25px; /* Adjust position of the name */
+        font-size: 12px; 
+        bottom: -25px;
     }
 
     .skills-icon:hover {
-        width: 80px; /* Reduce the width increase on hover */
+        width: 80px; 
     }
 
-    /* Learning Wrapper */
+   
     .learning-wrapper {
-        margin-top: 20px; /* Add space between sections */
+        margin-top: 20px; 
     }
 
     .learning-wrapper .skills-icon {
-        width: 40px; /* Reduce icon size for learning wrapper */
+        width: 40px; 
         height: 40px;
         font-size: 30px;
         margin: 8px;
     }
 
     .learning-wrapper .skills-icon::after {
-        font-size: 12px; /* Adjust name font size */
-        bottom: -25px; /* Adjust position of the name */
+        font-size: 12px; 
+        bottom: -25px; 
     }
 
     .learning-wrapper .skills-icon:hover {
-        width: 80px; /* Adjust hover width */
+        width: 80px; 
     }
 }
 
-/* Medium Devices (e.g., Tablets) */
+
 @media (max-width: 1024px) {
-    /* Skills Wrapper */
+   
     .skills-wrapper, .learning-wrapper {
-        width: 75%; /* Reduce wrapper width on tablets */
+        width: 75%; 
         padding: 1rem;
     }
 
     .skills-icon {
-        width: 45px; /* Adjust icon size */
+        width: 45px;
         height: 45px;
-        font-size: 35px; /* Adjust font size of icons */
-        margin: 12px; /* Adjust margin between icons */
+        font-size: 35px;
+        margin: 12px;
     }
 
     .skills-icon::after {
-        font-size: 13px; /* Adjust name font size */
-        bottom: -28px; /* Adjust position of the name */
+        font-size: 13px; 
+        bottom: -28px; 
     }
 
     .skills-icon:hover {
-        width: 90px; /* Set hover width */
+        width: 90px; 
     }
 
-    /* Learning Wrapper */
+ 
     .learning-wrapper {
         margin-top: 20px;
     }
@@ -914,32 +920,30 @@ body {
     }
 }
 
-/* Large Devices (e.g., Desktops) */
+
 @media (min-width: 1025px) {
     .skills-wrapper, .learning-wrapper {
-        width: 70%; /* Reduce the wrapper width on large screens */
+        width: 70%; 
     }
 
     .skills-icon {
-        width: 50px; /* Keep the default size for desktop */
+        width: 50px; 
         height: 50px;
-        font-size: 40px; /* Keep the default font size for icons */
-        margin: 16px; /* Keep the default margin */
+        font-size: 40px;
+        margin: 16px;
     }
 
     .skills-icon::after {
-        font-size: 14px; /* Keep the default font size for the name */
-        bottom: -30px; /* Keep the default position */
+        font-size: 14px; 
+        bottom: -30px; 
     }
 
     .skills-icon:hover {
-        width: 100px; /* Keep the default hover width */
+        width: 100px; 
     }
 
-    /* Learning Wrapper */
-    .learning-wrapper {
-        margin-top: 30px;
-    }
+   
+   
 
     .learning-wrapper .skills-icon {
         width: 50px;
