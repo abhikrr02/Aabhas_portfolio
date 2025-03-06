@@ -614,11 +614,18 @@ body {
 }
 
 .tech-wrapper{
-    width: 80%;
+    /* width: 80%;
     font-size: 30px;
     display: flex;
     align-items: center;
     justify-content: start;
+    gap: 0.5rem;
+    margin: auto; */
+    width: 80%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     margin: auto;
 }
@@ -626,18 +633,41 @@ body {
 .wrapper-icon{
     width: 40px;
     height: 40px;
-    margin: 10px;
+    margin: 16px;
     padding: 5px;
     font-size: 30px;
     border-radius: 12px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     text-align: center;
+    position: relative;
+    transition: width 0.3s ease, font-size 0.3s ease;
+}
+
+.wrapper-icon::after{
+    content: attr(data-name); 
+    position: absolute;
+    bottom: -30px; 
+    padding: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .wrapper-icon:hover{
-    transform: scale(1.25);
+    transform: scale(1.15);
     transition: 0.5s;
+}
+
+.wrapper-icon:hover::after{
+    opacity: 1; 
+    visibility: visible;
 }
 
 
