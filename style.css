@@ -820,7 +820,7 @@ body {
     cursor: pointer;
     text-align: center;
     position: relative;
-    transition: width 0.3s ease, font-size 0.3s ease;
+    transition: width 0.5s ease, font-size 0.5s ease;
 }
 
 .skills-icon::after {
@@ -836,7 +836,7 @@ body {
     font-size: 14px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 .skills-icon:hover {
@@ -991,3 +991,6 @@ body {
         width: 100px;
     }
 }
+
+
+

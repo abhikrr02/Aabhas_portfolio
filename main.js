@@ -25,6 +25,8 @@ window.onload = () => {
   if (myPageTag.includes('index')) {
     navLinks[0].classList.add('active');
     navLinksMobile[0].classList.add('active');
+    alert("Before you proceed, I just want to let you know that this portfolio is built with pure HTML, CSS, and JavaScript — no frameworks or libraries. I wanted to showcase my foundation in web development. A new React-based portfolio with exciting features and animations is in the works, so stay tuned! For now, feel free to explore this one. Thank you!");
+    
   } else if(myPageTag.includes('resume')) {
     navLinks[1].classList.add('active');
     navLinksMobile[1].classList.add('active');
@@ -35,6 +37,5 @@ window.onload = () => {
     navLinks[3].classList.add('active');
     navLinksMobile[3].classList.add('active');
   }
-}
 
-  
+}
